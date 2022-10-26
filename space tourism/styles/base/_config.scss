@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+/*********** BODY ************/
+
+body {
+  position: relative;
+  overflow-x: hidden;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

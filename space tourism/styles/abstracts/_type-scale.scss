@@ -1,0 +1,33 @@
+$type-scale: (
+  small: (
+    900: clamp(8rem, 8vw + 1.6rem, 15rem),
+    800: 5.6rem,
+    700: 3.6rem,
+    600: 1.6rem,
+    500: 1.6rem,
+    400: 1.5rem,
+    300: 1.6rem,
+    200: 1.4rem,
+    100: 1rem,
+  ),
+  medium: (
+    800: 8rem,
+    700: 4rem,
+    600: 2.4rem,
+    500: 2rem,
+    400: 1.6rem,
+  ),
+  large: (
+    800: 10rem,
+    700: 5.6rem,
+    600: 3.2rem,
+    500: 2.8rem,
+    400: 1.8rem,
+  ),
+);
+
+$font-weights: (
+  400: 400,
+  500: 500,
+  700: 700,
+);

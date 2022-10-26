@@ -1,0 +1,15 @@
+/* -------------------------------- */
+/* UTILITIES                        */
+/* -------------------------------- */
+
+@use '../abstracts' as *;
+
+@each $prop, $value in $colors {
+  .text-#{'' + $prop} {
+    color: hsl(var(--clr-#{'' + $prop}));
+  }
+
+  .bg-#{'' + $prop} {
+    background-color: hsl(var(--clr-#{'' + $prop}));
+  }
+}

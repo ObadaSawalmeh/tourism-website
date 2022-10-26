@@ -1,0 +1,37 @@
+@use '../abstracts/' as *;
+
+.d-block {
+  display: block;
+}
+
+/*********** FLEX ************/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex.even-columns > * {
+  flex-basis: 100%;
+  outline: 1px solid palevioletred;
+}
+
+/*********** GRID ************/
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.even-columns--grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+
+  @include media('>mid') {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}

@@ -1,0 +1,11 @@
+@use '../utilities/' as *;
+@use '../abstracts/' as *;
+
+.box {
+  padding: 3rem;
+  background-color: lightblue;
+}
+
+.example-component {
+  background-color: hsl(var(--clr-accent) / 0.2);
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Space Tourism | Frontend Mentor challenge</title>
+    <link rel="stylesheet" href="/dist/index.css" />
+  </head>
+  <body class="home">
+    <a href="#main-content" class="skip-to-content">Skip To Content</a>
+    <header class="primary-header flex">
+      <!-- SITE LOGO -->
+      <div>
+        <img
+          src="/assets/shared/logo.svg"
+          alt="space tourism logo"
+          class="logo"
+        />
+      </div>
+
+      <!-- MOBILE TOGGLE -->
+      <button
+        class="btn--mobile-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <!-- NAVIGATION -->
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation underlined flex"
+          data-visible="false"
+        >
+          <li class="active">
+            <a
+              class="text-white ff-sans-cond ls-2 uppercase"
+              href="./index.html"
+              ><span aria-hidden="true">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white ff-sans-cond ls-2 uppercase"
+              href="/pages/destination.html"
+              ><span aria-hidden="true">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white ff-sans-cond ls-2 uppercase"
+              href="/pages/crew.html"
+              ><span aria-hidden="true">02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a class="text-white ls-2 uppercase" href="/pages/technology.html"
+              ><span aria-hidden="true">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="grid-container grid-container--home">
+      <div>
+        <h1 class="text-accent ff-sans-cond ls-1 fs-500 uppercase">
+          So, you want to travel to
+          <span class="d-block text-white ff-serif fs-900">Space</span>
+        </h1>
+        <p>
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div>
+        <a
+          href="/pages/destination.html"
+          class="btn--large text-dark bg-white ff-serif uppercase"
+          >Explore</a
+        >
+      </div>
+    </main>
+    <script type="module" src="/src/navigation.ts"></script>
+  </body>
+</html>
